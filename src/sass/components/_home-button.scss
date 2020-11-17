@@ -1,6 +1,21 @@
 .home-button {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    color: white;
-}
+    width: 16rem;
+    height: 16rem;
+    background-color: $color-primary;
+    border: .5rem solid $color-black-1;
+    border-radius: 1rem; 
+    text-align: center;
+    margin: 3rem;
+
+    &__image {
+        display: inline-block;
+        width: 13rem;
+        height: 13rem;
+        padding: 2rem .5rem .5rem .5rem;
+    }
+
+    &:active {
+        border: .5rem solid $color-white-1;
+        transform: scale(1.1);
+    }
+  }
