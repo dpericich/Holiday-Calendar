@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# 2020 Holiday Calendar - Educational
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Mission
+COVID has hit our communities hard over the last few months. Businesses have closed and opened with restricitons and guidlines, large amounts of workers have moved remote and many of the events that many of us look forward to have either been cancelled, or forced to go online. One area that is having to adapt alot is education. 
 
-## Available Scripts
+Schools are a place for learning and social interactions, two things that are fundamental to development and growth for kids. Having to shift from full time in person, to splitting time between in class and zoom meetings, or even just full online classes is a tough and stressful transition. It is even harder when holiday activites such as making your own had turkey, or getting candy for St. Nicholas day is impossible due to online learning. 
 
-In the project directory, you can run:
+In order to make the holiday season a little less dreary, and given students something to look forward to, I decided to make this learning advent calendar. The daily puzzles are not hard, but the payout of a multilingual learning for completing sections of daily puzzles seemed like too good of a thing to pass up. 
 
-### `npm start`
+My mission with Holiday Calendar is to provide both students and teachers a fun way to complete or reinforce learning topics, while having the opportunity to learn how to say "Happy Holidays" in multiple languages. I am hoping that it will provide a little fun, during what has been a stressful school year!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies used
+Because this Holiday Calendar is geared towards younger students, I decided against building a backend. I figured that my users may not be comfortable setting up a username and password, and so I decided to make the app 100% front end. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+In order to store students' progress, I am using localStorage on their browsers to reload state/progress everytime they return to the site for their daily challenge. The only issue here is if they are using a privateBrowser, or if they do a hard refresh on the page. 
 
-### `npm test`
+For keeping track of each student's progress, I will be tying in in library to email teachers whenever a student finishes a set of questions. After the fifth question of set is answered correctly, the student will be prompted to enter their name, and an email with their name and the set they finished will be sent to their teach for recording.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The technologies used in this app are:
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Development : React, React Routers, SASS, HTML5 
+Testing : Jest, Enzyme, CheckProps
+Deployment : Heroku
