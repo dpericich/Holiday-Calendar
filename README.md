@@ -19,5 +19,7 @@ For keeping track of each student's progress, I will be tying in in library to e
 The technologies used in this app are:
 
 Development : React, React Routers, SASS, HTML5 
+<br />
 Testing : Jest, Enzyme, CheckProps
+<br />
 Deployment : Heroku
