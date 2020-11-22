@@ -1,5 +1,8 @@
 .dropdown {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     background-color: $color-grey-1;
     border: .5rem solid $color-green-1;
 
@@ -21,7 +24,16 @@
         @include respond(phone) {
             font-size: 2rem;
             width: 80%;
-            margin: 3rem auto
+            margin: 3rem auto;
         }
+    }
+
+    &__button {
+        background-color: $color-green-1;
+        width: 30%;
+        margin-bottom: 5rem;
+        padding: 2rem;
+        color: $color-white-1;
+        font-size: 2rem;
     }
 }

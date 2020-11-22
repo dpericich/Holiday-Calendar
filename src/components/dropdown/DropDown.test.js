@@ -1,10 +1,24 @@
 import {shallow} from 'enzyme';
-import DropDown, {getAvailableDays}  from './DropDown';
+import DropDown, {getAvailableDays, getDayForRouting}  from './DropDown';
 import {findByTestAttr} from '../../tests/testUtils'
 
 const setup = () => {
     return shallow(<DropDown />)
 };
+
+describe("Check that the drop down components render correctly", () => {
+    test('check that dropdown renders', () => {
+        let wrapper = setup();
+        let dropdown = findByTestAttr(wrapper, "dropdown");
+        expect(dropdown.length).toBe(1);
+    })
+
+    test('check that the submit button is rendering correctly', () => {
+        let wrapper = setup();
+        let button = findByTestAttr(wrapper, "submit-button");
+        expect(button.length).toBe(1);
+    })
+})
 
 describe("Checking that correct range of dates", () => {
     beforeEach(() => {
@@ -33,13 +47,16 @@ describe("Checking that correct range of dates", () => {
     })
 })
 
-describe("Check that the drop down correctly renders", () => {
-    test('check that dropdown renders', () => {
-        let wrapper = setup();
-        let dropdown = findByTestAttr(wrapper, "dropdown");
-        expect(dropdown.length).toBe(1);
-    })
+test("tests for the option to route event", () => {
+    const testDate = "November 7, 2020";
+    const day = getDayForRouting(testDate);
+    expect(day).toBe(7);
 })
+
+
+
+
+
 
 
 

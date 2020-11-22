@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {questions} from '../../QuestionFile';
 import {Link} from 'react-router-dom';
 
@@ -16,15 +16,37 @@ export const getAvailableDays = (questionsArray) => {
     return availableDropDowns;
 }
 
+/**
+ * @function getDayForRouting - Function to get day from selected option to route and show question
+ * @param {str} - event object returned by onchange of select
+ * @return {int} - day for selected question
+ */
+
+export const getDayForRouting = (str) => {
+    let sections = str.split(" ");
+    let section1 = sections[1];
+    let dayStr = section1.slice(0, -1);
+    let dayNumber = Number(dayStr);
+    return dayNumber;
+}
+
 
 const DropDown = () => {
     let getDisplayDates = getAvailableDays(questions);
+    const [question, setQuestion] = useState(1);
+
+    const choosedate = (e) => {
+        setQuestion(getDayForRouting(e.target.value));
+    }
 
     return (
         <div className="dropdown">
-            <select className="dropdown__dropdown" data-test="dropdown">
+            <select className="dropdown__dropdown" data-test="dropdown" onChange={choosedate}>
                 {getDisplayDates}
             </select>
+            <Link className="btn dropdown__button"  to={`/question/${question}`} data-test="submit-button">
+                Go To Question
+            </Link>
         </div>
     )
 
