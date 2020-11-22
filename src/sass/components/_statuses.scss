@@ -1,0 +1,25 @@
+.success {
+    font-size: 2rem;
+    color: $color-green-1;
+    border: .5rem solid $color-green-1;
+    background-color: rgba($color-green-2, .3);
+    padding: 1rem;
+
+
+    &__title {
+        margin: .5 rem 0 1rem .5rem;
+    }
+}
+
+.failure {
+    font-size: 2rem;
+    color: $color-red-1;
+    border: .5rem solid $color-red-1;
+    background-color: rgba($color-red-2, .3);
+    padding: 1rem;
+
+
+    &__title {
+        margin: .5 rem 0 1rem .5rem;
+    }
+}
