@@ -9,7 +9,7 @@
         // animation: error-title 3s infinite forwards;
         color: $color-ice-1;
 
-        @include respon(tab-width) {
+        @include respond(tab-width) {
             font-size: 3rem;
         }
     }
@@ -22,7 +22,7 @@
         // animation: bear 3s infinite forwards;
         fill: $color-ice-1;
 
-        @include respon(tab-width) {
+        @include respond(tab-width) {
             width: 20rem;
             height: 20rem;
         }

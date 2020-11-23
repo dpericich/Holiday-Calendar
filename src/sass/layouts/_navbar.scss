@@ -4,8 +4,9 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    background-color: $color-primary;
+    background-color: $color-red-1;
     height: 22rem;
+    text-shadow: .2rem .2rem $color-black-1;
 
     &__title {
         margin: 5rem;
@@ -13,10 +14,6 @@
         font-size: 10rem; 
         
         @include respond(tab-land) {
-            font-size: 7rem;
-        }
-
-        @include respond(tab-port) {
             font-size: 7rem;
         }
 

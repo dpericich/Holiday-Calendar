@@ -4,12 +4,14 @@
     align-items: center;
     justify-content: space-evenly;
     height: 10rem;
-    background-color: $color-secondary;
+    background-color: $color-green-1;
     font-size: 2rem;
+    color: $color-white-1;
 
     @include respond(phone) {
         flex-direction: column;
         align-items: center;
+        font-size: 1.8rem;
     }
 
     &__link {
@@ -18,12 +20,12 @@
         &:visited,
         &:link{ 
             text-decoration: none;
-            color: $color-black-2;
+            color: $color-white-1;
         }
 
         &:active,
         &:hover {
-            color: $color-white-1;
+            color: $color-white-2;
         }
     }
 }
