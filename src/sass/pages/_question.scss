@@ -1,0 +1,32 @@
+.question {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 6rem;
+    }
+
+    &__prompt {
+        font-size: 5rem;
+        margin: 3rem;
+    }
+
+    &__input {
+        width: 36%;
+        padding: 2rem;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+
+    &__submit {
+        background-color: $color-green-1;
+        width: 30%;
+        padding: 2rem;
+        font-size: 2rem;
+        margin: 2rem;
+    }
+}
