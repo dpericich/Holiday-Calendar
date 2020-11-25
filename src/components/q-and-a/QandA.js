@@ -12,6 +12,8 @@ const QandA = () => {
             <p className="qa__text"><span className="qa__text--answer">Answer: </span>Credit is incremental and will only be recorded once a full 5 question section is completed. Once a 5 question seciton is completed, you will be prompted to enter your name. Once you complete the prompt, an email will be sent to your teach for credit.</p>
             <p className="qa__text"><span className="qa__text--question">Question: </span>I believe I got a question right, but it won't give me credit. What should I do?</p>
             <p className="qa__text"><span className="qa__text--answer">Answer: </span>All questions were created and reviewed by your teacher. Please review any question issues with them.</p>
+            <p className="qa__text"><span className="qa__text--question">Question: </span>I would like to be able to redo the questions. How do I reset the app to clear the success messages?</p>
+            <p className="qa__text"><span className="qa__text--answer">Answer: </span>You will need to perform a hard refresh on your browser to reset the localStorage. A link on how to do that is attached: https://www.leadshook.com/help/how-to-clear-local-storage-in-google-chrome-browser/</p>
 
         </div>
     )

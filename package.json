@@ -9,6 +9,7 @@
     "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "web-vitals": "^0.2.4"
   },
@@ -17,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch:sass": "node-sass -w /sass/main.scss App.css"
+    "watch:sass": "node-sass -w ./src/sass/main.scss ./src/App.css"
   },
   "eslintConfig": {
     "extends": [
@@ -36,5 +37,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.3.1",
+    "check-prop-types": "^1.1.2",
+    "enzyme": "^3.11.0",
+    "jest-enzyme": "^7.1.2",
+    "prop-types": "^15.7.2"
   }
 }

@@ -1,0 +1,60 @@
+/* 
+0-600px             -- mobile
+600px-900px         -- tablet portrait mode
+900px-1200px        -- tablet landscape
+1200px - 1800px     -- is normal styles
+1800px+             -- big desktop
+
+breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- desktop
+
+ORDER : Base + typography > general layout + grid > page layout > components
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+.home-button {
+  width: 50rem;
+  height: 50rem;
+  background-color: #CE0D0D;
+  border: .5rem solid black;
+  border-radius: 1rem;
+  text-align: center; }
+  .home-button__image {
+    display: inline-block;
+    width: 25rem;
+    height: 25rem; }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  width: 100%;
+  background-color: #CE0D0D;
+  height: 40rem; }
+  .navbar__title {
+    color: white;
+    font-size: 14rem; }
