@@ -1,1 +1,20 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/typography";
+
 @import "components/home-button";
+@import "components/dropdown";
+@import "components/button";
+@import "components/statuses";
+@import "components/translate";
+
+@import "layouts/navbar";
+@import "layouts/footer"; 
+
+@import "pages/home";
+@import "pages/question";
+@import "pages/about";
+@import "pages/qanda";
+@import "pages/error";

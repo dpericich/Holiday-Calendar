@@ -29,13 +29,14 @@
 
 
         &--question {
-            color: $color-red-2
+            color: $color-red-2;
+            font-weight: 700;
 
         }
 
         &--answer {
             color: $color-green-2;
-
+            font-weight: 700;
         }
     }
 }
