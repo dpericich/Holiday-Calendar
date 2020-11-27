@@ -13,8 +13,15 @@ import {findByTestAttr} from '../../tests/testUtils';
      return shallow(<Footer />)
  }
 
-test('renders footer component', () => {
-    const wrapper = setup();
-    const footer = findByTestAttr(wrapper, 'footer');
-    expect(footer.length).toBe(1);
+describe('checks that component and links render', () => {
+    test('renders footer component', () => {
+        const wrapper = setup();
+        const footer = findByTestAttr(wrapper, 'footer');
+        expect(footer.length).toBe(1);
+    })
+    test('check that both links in footer render', () => {
+        const wrapper = setup();
+        const links = findByTestAttr(wrapper, "about-link");
+        expect(links.length).toBe(2);
+    })
 })
