@@ -1,6 +1,7 @@
 import React,  {useState} from 'react';
 import FailureStatus from '../question-statuses/FailureStatus';
 import SuccessStatus from '../question-statuses/SuccessStatus';
+import PropTypes from 'prop-types';
 
 
 const QuestionInput = ({answerStatus, answer, id, updatedAnswerStatus, handleAnswerSubmit}) => {
@@ -57,3 +58,8 @@ const QuestionInput = ({answerStatus, answer, id, updatedAnswerStatus, handleAns
 };
 
 export default QuestionInput;
+
+QuestionInput.propTypes = {
+    answerStatus : PropTypes.boolean,
+
+}

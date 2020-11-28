@@ -21,8 +21,8 @@ class App extends React.Component {
 
   /**
    * @param {int} id - integer for accessing the correct day of answerStatus state
-   * @param {boolean} value - boolean output from 
    * @function updatedAnswerStatus - takes the id and boolean value and updates state
+   * @param {boolean} value - boolean output from 
    */
 
   updatedAnswerStatus = async (id, value) => {

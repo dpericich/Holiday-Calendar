@@ -1,12 +1,11 @@
 import React from 'react';
 import DropDown from '../dropdown/DropDown';
+import PropTypes from 'prop-types';
 import Translate from '../translate/Translate';
 import {translate, questionProgress} from './translate';
 
 const Home = ({answerStatus}) => {
-    console.log(answerStatus)
     const questionStatusArray = questionProgress(answerStatus);
-    console.log(questionStatusArray)
     return(
         <div className="home">
             <DropDown />
@@ -19,3 +18,7 @@ const Home = ({answerStatus}) => {
 }
 
 export default Home;
+
+Home.propTypes = {
+    answerStatus: PropTypes.object.isRequired,
+}

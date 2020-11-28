@@ -6,6 +6,12 @@ export const translate = [
     {id: 4, date: "12/21/20-12/25/20", lang: "Italian", happy: "Buone vacanze!", img: "italy", audio: "italian", backupLink: "https://translate.google.com/?ui=tob&sl=en&tl=it&text=happy%20holidays&op=translate"},
 ]
 
+/**
+ * @funciton - questionProgress which accepts and object and return 
+ * @param {object} obj - state object to be passed down from main App
+ * @return {array} - array where each index is a number from 1 to 5 representing the number of days completed for that section
+ */
+
 export const questionProgress = (obj) => {
     let completionStatus = [];
     let counter = 0;

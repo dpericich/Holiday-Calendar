@@ -7,7 +7,7 @@ const setup = () => {
     return shallow(<HomeButton />);
 }
 
-test('', () => {
+test('check that home button icon renders in button', () => {
     const wrapper= setup();
     const icon = findByTestAttr(wrapper, 'icon');
     expect(icon.length).toBe(1);

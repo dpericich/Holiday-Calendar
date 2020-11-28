@@ -1,7 +1,7 @@
 export const questions = [
     {date: "November 1, 2020", dataDate: new Date(2020, 10, 1), day: 1, question: "What is 1 + 1", answer: 2},
     {date: "November 2, 2020", dataDate: new Date(2020, 10, 2), day: 2, question: "What is 5 - 4", answer: 1},
-    {date: "November 3, 2020", dataDate: new Date(2020, 10, 3), day: 3, question: "What colors is Mars?", answer: "red"},
+    {date: "November 3, 2020", dataDate: new Date(2020, 10, 3), day: 3, question: "What color is Mars?", answer: "red"},
     {date: "November 4, 2020", dataDate: new Date(2020, 10, 4), day: 4, question: "What is the powerhouse of a cell", answer: "mitochondria"},
     {date: "November 5, 2020", dataDate: new Date(2020, 10, 5), day: 5, question: "What is 27 / 3", answer: 9},
     {date: "November 6, 2020", dataDate: new Date(2020, 10, 6), day: 6, question: "What is the capitol of Texas", answer: "austin"},
