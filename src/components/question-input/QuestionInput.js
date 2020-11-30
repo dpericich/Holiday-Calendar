@@ -3,9 +3,28 @@ import FailureStatus from '../question-statuses/FailureStatus';
 import SuccessStatus from '../question-statuses/SuccessStatus';
 import PropTypes from 'prop-types';
 
-
 const QuestionInput = ({answerStatus, answer, id, updatedAnswerStatus, handleAnswerSubmit}) => {
     const [inputValue, setInputValue] = useState("");
+
+    /**
+ * @function answerCheck - cleans and then checks that input is correct. Calls updateAnswerStatus to update App state
+ * @param {string} input - uncleaned 
+ * @param {string or integer} answer - answer retrieved from json file
+ * @return - does not return items. Calls updatedAnswerStatus with the question id and the boolean result
+ */
+
+ const answerCheck = (input, answer) => {
+    let result;
+    input = input.replace(/,/g, '');
+    const numberInput = Number(input);
+    if (numberInput) {
+        result = (numberInput === answer);
+    } else {
+        let stringInput = input.toLowerCase();
+        result = (stringInput === answer);
+    }
+    updatedAnswerStatus(id, result);
+}
 
     /**
      * @function resetError - sets the state value to null if the answer is false so the incorrect answer prompt clears
@@ -13,20 +32,6 @@ const QuestionInput = ({answerStatus, answer, id, updatedAnswerStatus, handleAns
     const resetError = () => {
         updatedAnswerStatus(id, null)
     }
-    
-    const answerCheck = (input, answer) => {
-        let result;
-        const numberInput = Number(input);
-        console.log()
-        if (numberInput) {
-            result = (numberInput === answer);
-        } else {
-            let stringInput = input.toLowerCase();
-            result = (stringInput === answer);
-        }
-        updatedAnswerStatus(id, result);
-    }
-
 
     if(answerStatus[id] === null) {
         return (

@@ -1,5 +1,6 @@
 import React from 'react';
 import {findByTestAttr} from '../../tests/testUtils';
+import QuestionInput, {answerCheck} from './QuestionInput';
 
 describe('test that parts of input section render based on status value', () => {
     describe('test that component renders correctly for null status', () => {
@@ -37,5 +38,17 @@ describe('test that parts of input section render based on status value', () => 
 
         })
         
+    })
+})
+
+describe('test answerCheck function for multiple inputs', () => {
+    test('test that a number is returned correctly', () => {
+
+    });
+    test('test that a number with comma(s) is returned correctly', () => {
+
+    });
+    test('test that a string is returned correctly', () => {
+
     })
 })
